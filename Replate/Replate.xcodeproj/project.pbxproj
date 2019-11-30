@@ -12,9 +12,15 @@
 		1C7DCC5823849F2C00568405 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C7DCC5623849F2C00568405 /* Main.storyboard */; };
 		1C7DCC5A23849F2D00568405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C7DCC5923849F2D00568405 /* Assets.xcassets */; };
 		1C7DCC5D23849F2D00568405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C7DCC5B23849F2D00568405 /* LaunchScreen.storyboard */; };
-		1C7DCC662384DB4C00568405 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DCC652384DB4C00568405 /* User.swift */; };
-		1C8D19202384F4F800F0AF11 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D191F2384F4F800F0AF11 /* SignUpViewController.swift */; };
-		1C8D19222384F99600F0AF11 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D19212384F99600F0AF11 /* MainViewController.swift */; };
+		1C8D19202384F4F800F0AF11 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D191F2384F4F800F0AF11 /* LoginViewController.swift */; };
+		1C8D19242385003E00F0AF11 /* PickupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D19232385003E00F0AF11 /* PickupTableViewController.swift */; };
+		1C8D19262385008200F0AF11 /* PickupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D19252385008200F0AF11 /* PickupDetailViewController.swift */; };
+		1C8D192B238502B200F0AF11 /* PickupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D192A238502B200F0AF11 /* PickupRequest.swift */; };
+		1C8D192D238606BE00F0AF11 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D192C238606BE00F0AF11 /* Business.swift */; };
+		1C8D192F2386089D00F0AF11 /* Volunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D192E2386089D00F0AF11 /* Volunteer.swift */; };
+		1C8D193323860F3500F0AF11 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D193223860F3500F0AF11 /* APIController.swift */; };
+		1C8D19352386394200F0AF11 /* Bearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D19342386394200F0AF11 /* Bearer.swift */; };
+		1C8D19382387250100F0AF11 /* PickupRequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8D19372387250100F0AF11 /* PickupRequestController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +32,15 @@
 		1C7DCC5C23849F2D00568405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C7DCC5E23849F2D00568405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C7DCC642384B9A600568405 /* oregano.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = oregano.regular.ttf; path = ../../../../../../Desktop/oregano.regular.ttf; sourceTree = "<group>"; };
-		1C7DCC652384DB4C00568405 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		1C8D191F2384F4F800F0AF11 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		1C8D19212384F99600F0AF11 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1C8D191F2384F4F800F0AF11 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1C8D19232385003E00F0AF11 /* PickupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupTableViewController.swift; sourceTree = "<group>"; };
+		1C8D19252385008200F0AF11 /* PickupDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupDetailViewController.swift; sourceTree = "<group>"; };
+		1C8D192A238502B200F0AF11 /* PickupRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupRequest.swift; sourceTree = "<group>"; };
+		1C8D192C238606BE00F0AF11 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		1C8D192E2386089D00F0AF11 /* Volunteer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volunteer.swift; sourceTree = "<group>"; };
+		1C8D193223860F3500F0AF11 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		1C8D19342386394200F0AF11 /* Bearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearer.swift; sourceTree = "<group>"; };
+		1C8D19372387250100F0AF11 /* PickupRequestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupRequestController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,15 +76,37 @@
 				1C7DCC5023849F2C00568405 /* AppDelegate.swift */,
 				1C7DCC5223849F2C00568405 /* SceneDelegate.swift */,
 				1C7DCC5623849F2C00568405 /* Main.storyboard */,
-				1C8D19212384F99600F0AF11 /* MainViewController.swift */,
-				1C8D191F2384F4F800F0AF11 /* SignUpViewController.swift */,
-				1C7DCC652384DB4C00568405 /* User.swift */,
+				1C8D191F2384F4F800F0AF11 /* LoginViewController.swift */,
+				1C8D19232385003E00F0AF11 /* PickupTableViewController.swift */,
+				1C8D19252385008200F0AF11 /* PickupDetailViewController.swift */,
+				1C8D1927238500EE00F0AF11 /* Model + Model Controller */,
 				1C7DCC5923849F2D00568405 /* Assets.xcassets */,
 				1C7DCC642384B9A600568405 /* oregano.regular.ttf */,
 				1C7DCC5B23849F2D00568405 /* LaunchScreen.storyboard */,
 				1C7DCC5E23849F2D00568405 /* Info.plist */,
+				1C8D19362386411600F0AF11 /* Network */,
 			);
 			path = Replate;
+			sourceTree = "<group>";
+		};
+		1C8D1927238500EE00F0AF11 /* Model + Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1C8D192C238606BE00F0AF11 /* Business.swift */,
+				1C8D192A238502B200F0AF11 /* PickupRequest.swift */,
+				1C8D19372387250100F0AF11 /* PickupRequestController.swift */,
+				1C8D192E2386089D00F0AF11 /* Volunteer.swift */,
+			);
+			path = "Model + Model Controller";
+			sourceTree = "<group>";
+		};
+		1C8D19362386411600F0AF11 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1C8D193223860F3500F0AF11 /* APIController.swift */,
+				1C8D19342386394200F0AF11 /* Bearer.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,11 +180,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C8D19352386394200F0AF11 /* Bearer.swift in Sources */,
 				1C7DCC5123849F2C00568405 /* AppDelegate.swift in Sources */,
+				1C8D19242385003E00F0AF11 /* PickupTableViewController.swift in Sources */,
 				1C7DCC5323849F2C00568405 /* SceneDelegate.swift in Sources */,
-				1C8D19202384F4F800F0AF11 /* SignUpViewController.swift in Sources */,
-				1C7DCC662384DB4C00568405 /* User.swift in Sources */,
-				1C8D19222384F99600F0AF11 /* MainViewController.swift in Sources */,
+				1C8D19202384F4F800F0AF11 /* LoginViewController.swift in Sources */,
+				1C8D193323860F3500F0AF11 /* APIController.swift in Sources */,
+				1C8D19262385008200F0AF11 /* PickupDetailViewController.swift in Sources */,
+				1C8D192B238502B200F0AF11 /* PickupRequest.swift in Sources */,
+				1C8D19382387250100F0AF11 /* PickupRequestController.swift in Sources */,
+				1C8D192D238606BE00F0AF11 /* Business.swift in Sources */,
+				1C8D192F2386089D00F0AF11 /* Volunteer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
