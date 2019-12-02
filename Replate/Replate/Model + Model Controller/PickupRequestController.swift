@@ -32,12 +32,16 @@ class PickupRequestController {
         let pickupRequest = PickupRequest(business: business, foodType: foodType, amount: amount, assignVolunteer: assignVolunteer, completed: completed)
            pickupRequests.append(pickupRequest)
         print("pickup created with \(pickupRequest)")
-           saveToPersistentStore()
+        put(pickupRequest: pickupRequest)
+        saveToPersistentStore()
+        
        }
        
        func deletepickupRequest(_ pickupRequest: PickupRequest) {
            guard let pickupRequestIndex = pickupRequests.firstIndex(of: pickupRequest) else { return }
+          let pickUpToRemove = pickupRequests[pickupRequestIndex]
            pickupRequests.remove(at: pickupRequestIndex)
+          deletePickupRequestFromServer(pickUpToRemove)
            saveToPersistentStore()
        }
     
@@ -51,6 +55,7 @@ class PickupRequestController {
         
         
     }
+    
     
 //    func updateRequestPickedUp() {
 //
@@ -93,6 +98,65 @@ class PickupRequestController {
     }
     
     
+    private let pickUpListURL = URL(string:  "https://replate-dbbfd.firebaseio.com/")!
     
+    func put(pickupRequest: PickupRequest, completion: @escaping (Error?) -> Void = { _ in }) {
+        
+         let business =  pickupRequest.business
+        
+        
+        let baseWithIdentifierURL = pickUpListURL.appendingPathComponent(business)
+        let requestURL = baseWithIdentifierURL.appendingPathExtension("json")
+        
+        var request = URLRequest(url: requestURL)
+        request.httpMethod = "PUT"
+        
+        let jsonEncoder = JSONEncoder()
+        
+        do {
+            let data = try jsonEncoder.encode(pickupRequest)
+            request.httpBody = data
+        } catch {
+            print("Error encoding the data: \(error)")
+            completion(nil)
+            return
+        }
+        
+        URLSession.shared.dataTask(with: request) { (_, _, error) in
+            
+            if let error = error {
+                print("General error: \(error)")
+                completion(error)
+                return
+            }
+            
+            completion(nil)
+        }.resume()
+        
+    }
+    func deletePickupRequestFromServer(_ pickupRequest: PickupRequest, completion: @escaping (Error?) -> Void = { _ in }) {
+        
+         let business = pickupRequest.business
+          
+        
+        let baseWithIdentifierURL = pickUpListURL.appendingPathComponent(business)
+        let requestURL = baseWithIdentifierURL.appendingPathExtension("json")
+        
+        var request = URLRequest(url: requestURL)
+        request.httpMethod = "DELETE"
+        
+        
+        URLSession.shared.dataTask(with: request) { (_, _, error) in
+            
+            if let error = error {
+                print("Error deleting entry object: \(error)")
+                completion(error)
+                return
+            }
+            
+            completion(nil)
+            
+        }.resume()
+    }
     
 }

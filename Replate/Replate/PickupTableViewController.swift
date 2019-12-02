@@ -46,7 +46,7 @@ class PickupTableViewController: UITableViewController {
         print("Before the cell assignment")
         let pickupRequest = pickupRequestController.pickupRequests[indexPath.row]
         cell.textLabel?.text = pickupRequest.business
-        print("After the cell assignment \(cell.textLabel?.text)")
+        
 
         return cell
     }
@@ -60,17 +60,18 @@ class PickupTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // Override to support editing the table view.
+    
+   
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            let itemToDelete = pickupRequestController.pickupRequests[indexPath.row]
+            pickupRequestController.deletepickupRequest(itemToDelete)
             tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            
+        }
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
